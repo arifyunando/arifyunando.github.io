@@ -1,0 +1,185 @@
+/* GENERAL Style */
+
+/* NAVBAR */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: "Karla", sans-serif;
+  font-size: 28px;
+  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 30%); */
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  background-image: url("img/jumbotron-nature-bg.jpg");
+  background-size: cover;
+  margin-top: -75px;
+  height: 740px;
+  position: relative;
+}
+
+.jumbotron::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.1)
+  );
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 0;
+}
+
+.jumbotron .display-4 {
+  padding-top: 280px;
+}
+
+.jumbotron .lead,
+.display-4 {
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  padding-top: 0.3rem;
+  padding-bottom: 0.5rem;
+  color: white;
+}
+
+.headshot {
+  padding-top: 0.5rem;
+}
+
+.heads-1 {
+  text-align: start;
+  font-family: "Courier Prime", monospace;
+  margin-top: 0.5rem;
+}
+
+.highlights .pitch {
+  text-align: start;
+  font-family: "Montserrat", sans-serif;
+}
+
+.skillbar1 {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.skillbar2 {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.skillbar3 {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.skillbar1::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 100%;
+  background-color: burlywood;
+  position: absolute;
+  bottom: 0;
+}
+.skillbar2::after {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 100%;
+  background-color: burlywood;
+  position: absolute;
+  bottom: 0;
+}
+.skillbar3::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 100%;
+  background-color: burlywood;
+  position: absolute;
+  bottom: 0;
+}
+
+.skillbar-text {
+  position: relative;
+  z-index: 3;
+}
+
+.contacts-list a,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contacts-list a:hover {
+  text-decoration-line: underline;
+  color: inherit;
+}
+
+.activities {
+  background-color: rgba(247, 247, 247, 255);
+}
+
+/* DESKTOP Style */
+@media (min-width: 992px) {
+  /* NAVBAR */
+  .navbar::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+  }
+
+  .navbar .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+
+  .navbar .nav-link:hover::after,
+  .active::after {
+    content: "";
+    display: block;
+    width: 50%;
+    border-bottom: 3px solid silver;
+    margin: auto;
+    padding-bottom: 6px;
+    margin-bottom: -9px;
+  }
+
+  /* JUMBOTRON */
+
+  /* HIGHLIGHTS */
+  .highlights .about {
+    padding-left: 2.5rem;
+  }
+}
+
+/* MOBILE Style */
+@media (max-width: 991.98px) {
+  /* NAVBAR */
+  .navbar {
+    background-color: black;
+  }
+
+  /* JUMBOTRON */
+}
